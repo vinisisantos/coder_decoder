@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="shortcut icon" href="img/Frame 6.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body id="main">
+    <img src="img/Frame 6.png" alt="Alura Icon" class="alura" />
+    <section class="container" >
+
+
+        <div class="main">
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10"
+                placeholder="Digite seu texto"></textarea>
+
+            <div class="regras">
+                <img src="img/Frame 1.png" alt="" id="regras" />
+            </div>
+            <div class="botoes">
+ 
+                    <button class="btn-criptografar" type="button" onclick="criptografar()">
+                        Criptografar
+                    </button>
+
+  
+                    <button class="btn-descriptografar" onclick="descriptografar()">
+                        Descriptografar
+                    </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="card" id="card">
+            <div class="card-item">
+                <div class="mensagem-criptografada" id="mensagem-criptografada">
+                    <img src="img/imagem.png" alt="" id="imagem" />
+                    <h2 id="titulo-mensagem">Não foi encontrada nenhuma mensagem</h2>
+                    <p id="paragrafo">
+                        Digite um texto que você deseja criptografar ou descriptografar.
+                    </p>
+                </div>
+            </div>
+            <div class="resultado hidden" id="resultado">
+
+                <textarea name="textoResultado" class="textoResultado" id="textoResultado" cols="30" rows="10"
+                    placeholder="Digite seu texto"></textarea>
+
+
+                <button class="btn-copiar" onclick="copiarTexto()">
+                    Copiar
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Desenvolvido por <a href="https://github.com/vinisisantos" target="_blank">Vinicius Santos</a>, 2024</p>
+    </footer>
+</body>
+<script src="index.js"></script>
+
+</html>
